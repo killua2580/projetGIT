@@ -9,10 +9,10 @@ export const navItems: NavItem[] = [
 ];
 
 export const socialLinks: SocialLink[] = [
-  { id: 'twitter', platform: 'Twitter', url: '#', icon: 'twitter' },
-  { id: 'instagram', platform: 'Instagram', url: '#', icon: 'instagram' },
-  { id: 'youtube', platform: 'YouTube', url: '#', icon: 'youtube' },
-  { id: 'twitch', platform: 'Twitch', url: '#', icon: 'twitch' },
+  { id: 'twitter', platform: 'Twitter', url: 'https://twitter.com/CDawgVA', icon: 'twitter' },
+  { id: 'instagram', platform: 'Instagram', url: 'https://instagram.com/sydsnap', icon: 'instagram' },
+  { id: 'youtube', platform: 'YouTube', url: 'https://youtube.com/@TheAnimeMan', icon: 'youtube' },
+  { id: 'twitch', platform: 'Twitch', url: 'https://twitch.tv/ironmouse', icon: 'twitch' },
 ];
 
 export const animeData: AnimeCardProps[] = [
