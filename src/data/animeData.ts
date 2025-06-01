@@ -21,42 +21,42 @@ export const animeData: AnimeCardProps[] = [
   {
     id: 1,
     title: 'Spirited Away',
-    image: 'https://cdn.myanimelist.net/images/anime/6/79597.jpg',
+    image: 'https://m.media-amazon.com/images/M/MV5BNTEyNmEwOWUtYzkyOC00ZTQ4LTllZmUtMjk0Y2YwOGUzYjRiXkEyXkFqcGc@._V1_.jpg',
     category: 'Fantasy',
     rating: 4.8,
   },
   {
     id: 2,
     title: 'Ghost in the Shell',
-    image: 'https://cdn.myanimelist.net/images/anime/5/67707.jpg',
+    image: 'https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p36417_p_v8_aa.jpg',
     category: 'Sci-Fi',
     rating: 4.7,
   },
   {
     id: 3,
     title: 'Death Note',
-    image: 'https://cdn.myanimelist.net/images/anime/9/9453.jpg',
+    image: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJCp1AIyMA0ykJNEgaou1TA5lNcCIE3YzqFCd8l9yY5W4L1MrRVK2fWWasbjkx-mRwrlqv',
     category: 'Mystery',
     rating: 4.5,
   },
   {
     id: 4,
     title: 'Attack on Titan',
-    image: 'https://cdn.myanimelist.net/images/anime/10/47347.jpg',
+    image: 'https://m.media-amazon.com/images/M/MV5BZjliODY5MzQtMmViZC00MTZmLWFhMWMtMjMwM2I3OGY1MTRiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
     category: 'Action',
     rating: 4.9,
   },
   {
     id: 5,
     title: 'Your Name',
-    image: 'https://cdn.myanimelist.net/images/anime/5/87048.jpg',
+    image: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAiZvKRxC1SGGjIWatn-e4q8nkOAQsWosElu6LPj8rBK8cwpKo',
     category: 'Romance',
     rating: 4.6,
   },
   {
     id: 6,
     title: 'Neon Genesis Evangelion',
-    image: 'https://cdn.myanimelist.net/images/anime/1314/108941.jpg',
+    image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfXPltPlwvr-ICW1qsscPFjIQxpt_2NgYuTYz8niO4jQmNw849Icn5hGBAHMLf6su8vWD1',
     category: 'Sci-Fi',
     rating: 4.8,
   }
@@ -92,7 +92,7 @@ export const animeNews: AnimeNews[] = [
     id: 1,
     title: "Studio Ghibli Announces New Film Project",
     excerpt: "The legendary animation studio reveals their latest masterpiece in development, promising to return to their classic storytelling roots.",
-    image: "https://cdn.myanimelist.net/images/anime/6/79597.jpg",
+    image: "https://cdn.myanimelist.net/s/common/company_logos/e6d02dfe-71e9-49d2-bef1-68e585c2605e_600x600_i?s=f8bba4a0f7ae97f80c95e463c7529bd6",
     date: "2025-05-28",
     category: "Industry News",
     readTime: "3 min read"
@@ -101,7 +101,7 @@ export const animeNews: AnimeNews[] = [
     id: 2,
     title: "Attack on Titan Final Season Analysis",
     excerpt: "A deep dive into the emotional and narrative conclusion of one of anime's most impactful series.",
-    image: "https://cdn.myanimelist.net/images/anime/10/47347.jpg",
+    image: "https://m.media-amazon.com/images/M/MV5BZjliODY5MzQtMmViZC00MTZmLWFhMWMtMjMwM2I3OGY1MTRiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     date: "2025-05-25",
     category: "Analysis",
     readTime: "5 min read"
@@ -110,7 +110,7 @@ export const animeNews: AnimeNews[] = [
     id: 3,
     title: "Anime Streaming Wars: What's Next?",
     excerpt: "How different platforms are competing for exclusive anime content and what it means for fans worldwide.",
-    image: "https://cdn.myanimelist.net/images/anime/1314/108941.jpg",
+    image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfXPltPlwvr-ICW1qsscPFjIQxpt_2NgYuTYz8niO4jQmNw849Icn5hGBAHMLf6su8vWD1",
     date: "2025-05-22",
     category: "Industry",
     readTime: "4 min read"
@@ -119,7 +119,7 @@ export const animeNews: AnimeNews[] = [
     id: 4,
     title: "The Art of Anime Voice Acting",
     excerpt: "Exploring the talented voice actors who bring our favorite characters to life across different languages.",
-    image: "https://cdn.myanimelist.net/images/anime/9/9453.jpg",
+    image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJCp1AIyMA0ykJNEgaou1TA5lNcCIE3YzqFCd8l9yY5W4L1MrRVK2fWWasbjkx-mRwrlqv",
     date: "2025-05-20",
     category: "Culture",
     readTime: "6 min read"
@@ -149,7 +149,7 @@ export const featuredAnimeInfo: AnimeInfo[] = [
     studio: "Studio Ghibli",
     genre: ["Fantasy", "Adventure", "Family"],
     rating: 9.3,
-    image: "https://cdn.myanimelist.net/images/anime/6/79597.jpg"
+    image: "https://m.media-amazon.com/images/M/MV5BNTEyNmEwOWUtYzkyOC00ZTQ4LTllZmUtMjk0Y2YwOGUzYjRiXkEyXkFqcGc@._V1_.jpg"
   },
   {
     id: 2,
@@ -160,7 +160,7 @@ export const featuredAnimeInfo: AnimeInfo[] = [
     studio: "WIT Studio / MAPPA",
     genre: ["Action", "Drama", "Dark Fantasy"],
     rating: 9.0,
-    image: "https://cdn.myanimelist.net/images/anime/10/47347.jpg"
+    image: "https://m.media-amazon.com/images/M/MV5BZjliODY5MzQtMmViZC00MTZmLWFhMWMtMjMwM2I3OGY1MTRiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
   },
   {
     id: 3,
@@ -171,6 +171,6 @@ export const featuredAnimeInfo: AnimeInfo[] = [
     studio: "CoMix Wave Films",
     genre: ["Romance", "Drama", "Supernatural"],
     rating: 8.4,
-    image: "https://cdn.myanimelist.net/images/anime/5/87048.jpg"
+    image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAiZvKRxC1SGGjIWatn-e4q8nkOAQsWosElu6LPj8rBK8cwpKo"
   }
 ];
