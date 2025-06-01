@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { ThemeProvider } from './contexts/ThemeContext';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
 import AnimeGrid from './components/anime/AnimeGrid';
@@ -22,21 +23,24 @@ function App() {
     
     return () => {
       document.documentElement.style.scrollBehavior = '';
-    };
-  }, []);
-    return (
-    <div className="font-sans text-gray-900 overflow-x-hidden">
-      <CustomCursor />
-      <Header />
-      <Hero />
-      <AnimeGrid />
-      <AnimeInfoSection />
-      <AnimeNews />      <ThankYouProfessor />
-      <Categories />
-      <About />
-      <Footer />
-      <ScrollToTop />
-    </div>
+    };  }, []);
+
+  return (
+    <ThemeProvider>
+      <div className="font-sans text-gray-900 dark:text-gray-100 dark:bg-gray-900 overflow-x-hidden transition-colors duration-300">
+        <CustomCursor />
+        <Header />
+        <Hero />
+        <AnimeGrid />
+        <AnimeInfoSection />
+        <AnimeNews />
+        <ThankYouProfessor />
+        <Categories />
+        <About />
+        <Footer />
+        <ScrollToTop />
+      </div>
+    </ThemeProvider>
   );
 }
 

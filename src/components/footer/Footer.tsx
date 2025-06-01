@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
   };
   
   return (
-    <footer id="contact" className="bg-gradient-to-br from-emerald-900 to-cyan-900 text-white">
+    <footer id="contact" className="bg-gradient-to-br from-emerald-900 to-cyan-900 dark:from-gray-900 dark:to-gray-800 text-white dark:text-gray-100">
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>

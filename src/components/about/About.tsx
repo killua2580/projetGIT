@@ -5,7 +5,7 @@ const About: React.FC = () => {
   const parallaxOffset = useParallax(0.3);
   
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-emerald-900 via-cyan-800 to-cyan-900 text-white relative overflow-hidden">
+    <section id="about" className="py-20 bg-gradient-to-br from-emerald-900 via-cyan-800 to-cyan-900 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-white dark:text-gray-100 relative overflow-hidden">
       <div 
         className="absolute inset-0 opacity-10"
         style={{
@@ -25,7 +25,7 @@ const About: React.FC = () => {
             About Ahlem Bedoui
           </h2>
           
-          <div className="bg-white/10 backdrop-blur-md rounded-lg p-8 shadow-xl">
+          <div className="bg-white/10 dark:bg-gray-800/50 backdrop-blur-md rounded-lg p-8 shadow-xl dark:shadow-gray-900/50">
             <p className="text-lg mb-6 leading-relaxed">
               Ahlem Bedoui is a passionate anime enthusiast, curator, and cultural ambassador who has dedicated her life to celebrating and promoting the artistry of Japanese animation.
             </p>

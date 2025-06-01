@@ -23,9 +23,8 @@ const NewsCard: React.FC<{ news: AnimeNews; index: number }> = ({ news, index })
     }
   };
 
-  return (
-    <article 
-      className={`group bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-white/20 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20 animate-fadeIn cursor-pointer transform hover:scale-105 ${getDelayClass(index)}`}
+  return (    <article 
+      className={`group bg-white/10 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-white/20 dark:hover:bg-gray-700/50 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/20 dark:hover:shadow-cyan-400/20 animate-fadeIn cursor-pointer transform hover:scale-105 ${getDelayClass(index)}`}
     >
       <div className="relative overflow-hidden">
         <img 
@@ -71,18 +70,17 @@ const NewsCard: React.FC<{ news: AnimeNews; index: number }> = ({ news, index })
 
 const AnimeNewsSection: React.FC = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-slate-900 via-cyan-900 to-emerald-900 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-slate-900 via-cyan-900 to-emerald-900 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-emerald-500/20 transform skew-y-1"></div>
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 animate-fadeIn">
+        <div className="text-center mb-16">          <h2 className="text-4xl md:text-5xl font-bold text-white dark:text-gray-100 mb-4 animate-fadeIn">
             Latest <span className="bg-gradient-to-r from-cyan-400 to-emerald-400 text-transparent bg-clip-text">Anime News</span>
           </h2>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto animate-fadeIn animation-delay-300">
+          <p className="text-gray-300 dark:text-gray-400 text-lg max-w-2xl mx-auto animate-fadeIn animation-delay-300">
             Stay updated with the latest happenings in the anime world, from industry news to cultural insights
           </p>
         </div>

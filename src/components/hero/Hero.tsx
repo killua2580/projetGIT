@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
   
   return (    <section 
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-emerald-900 via-cyan-800 to-cyan-900"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-emerald-900 via-cyan-800 to-cyan-900 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900"
     >
       <ParticleBackground />
         {/* Floating elements */}

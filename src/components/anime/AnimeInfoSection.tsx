@@ -15,9 +15,8 @@ const AnimeInfoCard: React.FC<{ anime: AnimeInfo; index: number }> = ({ anime, i
     }
   };
 
-  return (
-    <div 
-      className={`bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden hover:bg-white/20 transition-all duration-500 animate-fadeIn group cursor-pointer ${getDelayClass(index)}`}
+  return (    <div 
+      className={`bg-white/10 dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl overflow-hidden hover:bg-white/20 dark:hover:bg-gray-700/50 transition-all duration-500 animate-fadeIn group cursor-pointer ${getDelayClass(index)}`}
       onClick={() => setIsExpanded(!isExpanded)}
     >
       <div className="relative overflow-hidden">
@@ -112,7 +111,7 @@ const AnimeInfoCard: React.FC<{ anime: AnimeInfo; index: number }> = ({ anime, i
 
 const AnimeInfoSection: React.FC = () => {
   return (
-    <section id="anime-info" className="py-20 bg-gradient-to-br from-emerald-900 via-teal-800 to-cyan-900 relative overflow-hidden">
+    <section id="anime-info" className="py-20 bg-gradient-to-br from-emerald-900 via-teal-800 to-cyan-900 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 left-10 w-32 h-32 bg-cyan-400 rounded-full animate-float"></div>
@@ -120,12 +119,11 @@ const AnimeInfoSection: React.FC = () => {
         <div className="absolute bottom-20 left-1/3 w-16 h-16 bg-cyan-300 rounded-full animate-float animation-delay-600"></div>
       </div>
       
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 animate-fadeIn">
+      <div className="container mx-auto px-4 relative z-10">        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-white dark:text-gray-100 mb-4 animate-fadeIn">
             Featured <span className="bg-gradient-to-r from-emerald-400 to-cyan-400 text-transparent bg-clip-text">Anime Info</span>
           </h2>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto animate-fadeIn animation-delay-300">
+          <p className="text-gray-300 dark:text-gray-400 text-lg max-w-2xl mx-auto animate-fadeIn animation-delay-300">
             Discover detailed information about the most beloved anime series and films that have shaped the industry
           </p>
         </div>

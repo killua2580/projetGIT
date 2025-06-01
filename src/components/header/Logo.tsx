@@ -6,9 +6,8 @@ interface LogoProps {
 
 const Logo: React.FC<LogoProps> = ({ scrolled }) => {
   return (
-    <div className="relative overflow-hidden">
-      <h1        className={`font-bold relative transition-all duration-500 ${
-          scrolled ? 'text-2xl text-cyan-500' : 'text-3xl text-white'
+    <div className="relative overflow-hidden">      <h1        className={`font-bold relative transition-all duration-500 ${
+          scrolled ? 'text-2xl text-cyan-500 dark:text-cyan-400' : 'text-3xl text-white dark:text-gray-100'
         }`}
       >
         <span className="inline-block">

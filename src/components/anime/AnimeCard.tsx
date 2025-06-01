@@ -10,9 +10,8 @@ const AnimeCard: React.FC<AnimeCardProps> = ({
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   
-  return (
-    <div 
-      className="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer transform transition-all duration-500 hover:scale-105 h-80"
+  return (    <div 
+      className="relative overflow-hidden rounded-lg shadow-lg dark:shadow-gray-900/50 group cursor-pointer transform transition-all duration-500 hover:scale-105 h-80"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

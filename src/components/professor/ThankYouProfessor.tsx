@@ -29,9 +29,8 @@ const ThankYouProfessor: React.FC = () => {
     { icon: Lightbulb, title: "Innovation Guide", description: "Teaching modern development practices" },
     { icon: Trophy, title: "Excellence Award", description: "Outstanding teaching achievements" }
   ];
-
   return (
-    <section id="professor" className="py-20 bg-gradient-to-br from-cyan-900 via-emerald-800 to-teal-900 text-white relative overflow-hidden">
+    <section id="professor" className="py-20 bg-gradient-to-br from-cyan-900 via-emerald-800 to-teal-900 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-white dark:text-gray-100 relative overflow-hidden">
       {/* Enhanced Animated Background Elements */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-10 w-32 h-32 bg-cyan-400 rounded-full animate-float"></div>
