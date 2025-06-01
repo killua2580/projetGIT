@@ -5,7 +5,7 @@ const About: React.FC = () => {
   const parallaxOffset = useParallax(0.3);
   
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-purple-900 via-pink-800 to-pink-900 text-white relative overflow-hidden">
+    <section id="about" className="py-20 bg-gradient-to-br from-emerald-900 via-cyan-800 to-cyan-900 text-white relative overflow-hidden">
       <div 
         className="absolute inset-0 opacity-10"
         style={{

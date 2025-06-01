@@ -27,9 +27,8 @@ const ParticleBackground: React.FC = () => {
     
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
-    
-    // Create particles
-    const colors = ['#F9C5D1', '#A88BEB', '#04BEFE', '#FFFFFF'];
+      // Create particles
+    const colors = ['#A7F3D0', '#67E8F9', '#34D399', '#22D3EE'];
     const particleCount = Math.min(window.innerWidth / 10, 100);
     
     for (let i = 0; i < particleCount; i++) {

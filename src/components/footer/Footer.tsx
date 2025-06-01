@@ -22,13 +22,12 @@ const Footer: React.FC = () => {
   };
   
   return (
-    <footer id="contact" className="bg-gradient-to-br from-purple-900 to-pink-900 text-white">
+    <footer id="contact" className="bg-gradient-to-br from-emerald-900 to-cyan-900 text-white">
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
             <h2 className="text-3xl font-bold mb-6">
-              Ahlem Bedoui
-              <span className="bg-gradient-to-r from-pink-400 to-purple-400 text-transparent bg-clip-text">
+              Ahlem Bedoui              <span className="bg-gradient-to-r from-cyan-400 to-emerald-400 text-transparent bg-clip-text">
                  • Anime Enthusiast
               </span>
             </h2>
@@ -63,7 +62,7 @@ const Footer: React.FC = () => {
           </p>
           
           <p className="text-white/60 flex items-center">
-            Made with <Heart className="w-4 h-4 mx-1 text-pink-400" /> for anime fans everywhere
+            Made with <Heart className="w-4 h-4 mx-1 text-cyan-400" /> for anime fans everywhere
           </p>
         </div>
       </div>

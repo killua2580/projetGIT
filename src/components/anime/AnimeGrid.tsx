@@ -11,9 +11,8 @@ const AnimeGrid: React.FC = () => {
   
   return (
     <section id="featured" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-2">
-          <span className="bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text">
+      <div className="container mx-auto px-4">        <h2 className="text-4xl font-bold text-center mb-2">
+          <span className="bg-gradient-to-r from-cyan-500 to-emerald-500 text-transparent bg-clip-text">
             Featured Anime
           </span>
         </h2>
@@ -24,10 +23,9 @@ const AnimeGrid: React.FC = () => {
         
         <div className="flex flex-wrap justify-center gap-2 mb-12">
           <button
-            onClick={() => setSelectedCategory(null)}
-            className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+            onClick={() => setSelectedCategory(null)}            className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
               selectedCategory === null
-                ? 'bg-pink-500 text-white'
+                ? 'bg-cyan-500 text-white'
                 : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
             }`}
           >
@@ -36,10 +34,9 @@ const AnimeGrid: React.FC = () => {
           {categories.slice(0, 8).map((category) => (
             <button
               key={category}
-              onClick={() => setSelectedCategory(category)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+              onClick={() => setSelectedCategory(category)}              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                 selectedCategory === category
-                  ? 'bg-pink-500 text-white'
+                  ? 'bg-cyan-500 text-white'
                   : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
               }`}
             >
