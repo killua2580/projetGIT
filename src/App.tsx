@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
 import AnimeGrid from './components/anime/AnimeGrid';
+import AnimeInfoSection from './components/anime/AnimeInfoSection';
+import AnimeNews from './components/anime/AnimeNews';
 import Categories from './components/anime/Categories';
 import About from './components/about/About';
 import Footer from './components/footer/Footer';
@@ -21,13 +23,14 @@ function App() {
       document.documentElement.style.scrollBehavior = '';
     };
   }, []);
-  
-  return (
+    return (
     <div className="font-sans text-gray-900 overflow-x-hidden">
       <CustomCursor />
       <Header />
       <Hero />
       <AnimeGrid />
+      <AnimeInfoSection />
+      <AnimeNews />
       <Categories />
       <About />
       <Footer />
