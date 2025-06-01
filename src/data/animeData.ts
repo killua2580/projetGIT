@@ -4,6 +4,7 @@ export const navItems: NavItem[] = [
   { id: 'home', label: 'Home', href: '#home' },
   { id: 'featured', label: 'Featured', href: '#featured' },
   { id: 'anime-info', label: 'Anime Info', href: '#anime-info' },
+  { id: 'professor', label: 'Thank You Professor', href: '#professor' },
   { id: 'categories', label: 'Categories', href: '#categories' },
   { id: 'about', label: 'About', href: '#about' },
   { id: 'contact', label: 'Contact', href: '#contact' },
