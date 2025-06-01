@@ -5,6 +5,7 @@ import AnimeGrid from './components/anime/AnimeGrid';
 import AnimeInfoSection from './components/anime/AnimeInfoSection';
 import AnimeNews from './components/anime/AnimeNews';
 import Categories from './components/anime/Categories';
+import ThankYouProfessor from './components/professor/ThankYouProfessor';
 import About from './components/about/About';
 import Footer from './components/footer/Footer';
 import ScrollToTop from './components/common/ScrollToTop';
@@ -30,7 +31,7 @@ function App() {
       <Hero />
       <AnimeGrid />
       <AnimeInfoSection />
-      <AnimeNews />
+      <AnimeNews />      <ThankYouProfessor />
       <Categories />
       <About />
       <Footer />
