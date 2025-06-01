@@ -31,13 +31,12 @@ const Navigation: React.FC<NavigationProps> = ({ scrolled }) => {
         {navItems.map((item) => (
           <li key={item.id} className="relative group">
             <button
-              onClick={() => scrollToSection(item.id)}
-              className={`font-medium transition-colors duration-300 ${
-                scrolled ? 'text-gray-800 hover:text-pink-500' : 'text-white hover:text-pink-300'
+              onClick={() => scrollToSection(item.id)}              className={`font-medium transition-colors duration-300 ${
+                scrolled ? 'text-gray-800 hover:text-cyan-500' : 'text-white hover:text-cyan-300'
               }`}
             >
               {item.label}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-purple-500 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-emerald-500 transition-all duration-300 group-hover:w-full"></span>
             </button>
           </li>
         ))}
@@ -57,8 +56,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrolled }) => {
       </button>
       
       {/* Mobile Navigation Menu */}
-      <div 
-        className={`fixed inset-0 bg-gradient-to-br from-purple-600/95 to-pink-400/95 flex flex-col items-center justify-center transition-all duration-300 ease-in-out z-40 ${
+      <div        className={`fixed inset-0 bg-gradient-to-br from-emerald-600/95 to-cyan-400/95 flex flex-col items-center justify-center transition-all duration-300 ease-in-out z-40 ${
           mobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
       >
@@ -67,7 +65,7 @@ const Navigation: React.FC<NavigationProps> = ({ scrolled }) => {
             <li key={item.id} className="relative group">
               <button
                 onClick={() => scrollToSection(item.id)}
-                className="text-white text-2xl font-medium transition-all duration-300 hover:text-pink-200"
+                className="text-white text-2xl font-medium transition-all duration-300 hover:text-cyan-200"
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>

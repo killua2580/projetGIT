@@ -50,15 +50,14 @@ const ContactForm: React.FC = () => {
           <div>
             <label htmlFor="name" className="block text-white mb-1">
               Name
-            </label>
-            <input
+            </label>            <input
               type="text"
               id="name"
               name="name"
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-pink-500/50"
+              className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-cyan-500/50"
               placeholder="Your name"
             />
           </div>
@@ -66,15 +65,14 @@ const ContactForm: React.FC = () => {
           <div>
             <label htmlFor="email" className="block text-white mb-1">
               Email
-            </label>
-            <input
+            </label>            <input
               type="email"
               id="email"
               name="email"
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-pink-500/50"
+              className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-cyan-500/50"
               placeholder="your.email@example.com"
             />
           </div>
@@ -82,15 +80,14 @@ const ContactForm: React.FC = () => {
           <div>
             <label htmlFor="message" className="block text-white mb-1">
               Message
-            </label>
-            <textarea
+            </label>            <textarea
               id="message"
               name="message"
               value={formData.message}
               onChange={handleChange}
               required
               rows={4}
-              className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-pink-500/50 resize-none"
+              className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 resize-none"
               placeholder="Your message"
             ></textarea>
           </div>

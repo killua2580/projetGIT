@@ -7,9 +7,8 @@ interface LogoProps {
 const Logo: React.FC<LogoProps> = ({ scrolled }) => {
   return (
     <div className="relative overflow-hidden">
-      <h1 
-        className={`font-bold relative transition-all duration-500 ${
-          scrolled ? 'text-2xl text-pink-500' : 'text-3xl text-white'
+      <h1        className={`font-bold relative transition-all duration-500 ${
+          scrolled ? 'text-2xl text-cyan-500' : 'text-3xl text-white'
         }`}
       >
         <span className="inline-block">
@@ -28,7 +27,7 @@ const Logo: React.FC<LogoProps> = ({ scrolled }) => {
           <span className="inline-block hover:animate-pulse transition-transform duration-300 hover:scale-110">u</span>
           <span className="inline-block hover:animate-pulse transition-transform duration-300 hover:scale-110">i</span>
         </span>
-        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-purple-500 transition-all duration-700 group-hover:w-full"></span>
+        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-emerald-500 transition-all duration-700 group-hover:w-full"></span>
       </h1>
     </div>
   );

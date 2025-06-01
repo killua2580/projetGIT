@@ -8,24 +8,22 @@ import { useParallax } from '../../hooks/useScrollPosition';
 const Hero: React.FC = () => {
   const parallaxOffset = useParallax(0.5);
   
-  return (
-    <section 
+  return (    <section 
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-purple-900 via-pink-800 to-pink-900"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-emerald-900 via-cyan-800 to-cyan-900"
     >
       <ParticleBackground />
-      
-      {/* Floating elements */}
-      <FloatingElement className="top-1/4 left-1/5 text-pink-300" delay={0}>
+        {/* Floating elements */}
+      <FloatingElement className="top-1/4 left-1/5 text-cyan-300" delay={0}>
         <Star className="w-8 h-8 animate-pulse" />
       </FloatingElement>
-      <FloatingElement className="top-1/3 right-1/4 text-purple-300" delay={1.5}>
+      <FloatingElement className="top-1/3 right-1/4 text-emerald-300" delay={1.5}>
         <Sparkles className="w-6 h-6 animate-pulse" />
       </FloatingElement>
       <FloatingElement className="bottom-1/4 right-1/5 text-blue-300" delay={1}>
         <Star className="w-10 h-10 animate-pulse" />
       </FloatingElement>
-      <FloatingElement className="bottom-1/3 left-1/4 text-pink-200" delay={0.5}>
+      <FloatingElement className="bottom-1/3 left-1/4 text-cyan-200" delay={0.5}>
         <Sparkles className="w-12 h-12 animate-pulse" />
       </FloatingElement>
       
@@ -34,18 +32,17 @@ const Hero: React.FC = () => {
         style={{ transform: `translateY(${parallaxOffset}px)` }}
       >
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fadeIn">
-          <span className="block">Thank You</span>
-          <span className="bg-gradient-to-r from-pink-400 to-purple-400 text-transparent bg-clip-text">
+          <span className="block">Thank You</span>          <span className="bg-gradient-to-r from-cyan-400 to-emerald-400 text-transparent bg-clip-text">
             Ahlem Bedoui
           </span>
         </h1>
         
         <div className="flex justify-center items-center mb-8 animate-fadeIn animation-delay-300">
-          <Heart className="text-pink-400 w-6 h-6 mr-2 animate-pulse" />
+          <Heart className="text-cyan-400 w-6 h-6 mr-2 animate-pulse" />
           <p className="text-xl md:text-2xl text-white font-light">
             For Your Passion and Dedication to Anime Culture
           </p>
-          <Heart className="text-pink-400 w-6 h-6 ml-2 animate-pulse" />
+          <Heart className="text-cyan-400 w-6 h-6 ml-2 animate-pulse" />
         </div>
         
         <div className="flex flex-col md:flex-row justify-center gap-4 animate-fadeIn animation-delay-600">

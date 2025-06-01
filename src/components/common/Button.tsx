@@ -7,6 +7,8 @@ interface ButtonProps {
   onClick?: () => void;
   className?: string;
   icon?: React.ReactNode;
+  type?: 'button' | 'submit' | 'reset';
+  disabled?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -16,14 +18,15 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   className = '',
   icon,
+  type = 'button',
+  disabled = false,
 }) => {
   const baseStyles = 'rounded-full font-medium transition-all duration-300 flex items-center justify-center';
-  
-  const variantStyles = {
-    primary: 'bg-pink-400 hover:bg-pink-500 text-white shadow-lg hover:shadow-pink-300/50',
-    secondary: 'bg-purple-500 hover:bg-purple-600 text-white shadow-lg hover:shadow-purple-300/50',
+    const variantStyles = {
+    primary: 'bg-cyan-400 hover:bg-cyan-500 text-white shadow-lg hover:shadow-cyan-300/50',
+    secondary: 'bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg hover:shadow-emerald-300/50',
     accent: 'bg-blue-400 hover:bg-blue-500 text-white shadow-lg hover:shadow-blue-300/50',
-    outline: 'bg-transparent border-2 border-pink-400 text-pink-400 hover:bg-pink-400/10',
+    outline: 'bg-transparent border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400/10',
   };
   
   const sizeStyles = {
@@ -31,11 +34,12 @@ const Button: React.FC<ButtonProps> = ({
     md: 'text-base py-2 px-5',
     lg: 'text-lg py-3 px-8',
   };
-  
-  return (
+    return (
     <button
+      type={type}
       onClick={onClick}
-      className={`${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
+      disabled={disabled}
+      className={`${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className} ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
     >
       {icon && <span className="mr-2">{icon}</span>}
       {children}
